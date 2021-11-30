@@ -1,0 +1,36 @@
+<RCC>
+    <qresource prefix="/food">
+        <file>food1.png</file>
+        <file>food2.png</file>
+        <file>food4.png</file>
+        <file>food3.png</file>
+    </qresource>
+    <qresource prefix="/other">
+        <file>snake.ico</file>
+    </qresource>
+    <qresource prefix="/parts/head">
+        <file>snake_head1.png</file>
+        <file>snake_head2.png</file>
+        <file>snake_head3.png</file>
+        <file>snake_head4.png</file>
+        <file>snake_tail1.png</file>
+    </qresource>
+    <qresource prefix="/parts/body">
+        <file>snake_body1.png</file>
+        <file>snake_body2.png</file>
+        <file>snake_body3.png</file>
+        <file>snake_body4.png</file>
+    </qresource>
+    <qresource prefix="/parts/tail">
+        <file>snake_tail1.png</file>
+        <file>snake_tail2.png</file>
+        <file>snake_tail3.png</file>
+        <file>snake_tail4.png</file>
+    </qresource>
+    <qresource prefix="/parts/turn">
+        <file>snake_turn1.png</file>
+        <file>snake_turn2.png</file>
+        <file>snake_turn3.png</file>
+        <file>snake_turn4.png</file>
+    </qresource>
+</RCC>
