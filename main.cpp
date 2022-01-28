@@ -4,21 +4,10 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    int difficult = 3, size, time, win_size = 900;
-    float resize = 0.97;
+    int difficulty = 3, size, time, win_size = 800;
+    float resize = 0.95;
 
-    ifstream cfg("settings.cfg");
-
-    if(cfg.is_open())
-    {
-        string s;
-        cfg >> s;
-        difficult = stoi(s);
-        cfg >> s;
-        win_size = stoi(s) - 100;
-    }
-
-    switch (difficult)
+    switch (difficulty)
     {
     case 1 :
         size = 14;
@@ -43,21 +32,11 @@ int main(int argc, char *argv[])
     default :
         size = 10;
         time = 250;
-        difficult = 3;
+        difficulty = 3;
         break;
     }
 
-    if(win_size < 250)
-    {
-        win_size = 250;
-        resize = 0.91;
-    }
-    else if(win_size < 500)
-        resize = 0.92;
-    else
-        resize = 0.97;
-
-    game w(difficult, win_size, size, time, resize);
+    game w(difficulty, win_size, size, time, resize);
     w.show();
 
     return a.exec();
